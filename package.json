@@ -1,0 +1,19 @@
+{
+  "name": "moar-sugar",
+  "version": "3.0.0",
+  "description": "Stuff to make development sweet!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moar-stuff/moar-sugar.git"
+  },
+  "author": "Mark Farnsworth",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/moar-stuff/moar-sugar/issues"
+  },
+  "homepage": "https://github.com/moar-stuff/moar-sugar#readme"
+}
