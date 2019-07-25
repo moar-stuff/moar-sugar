@@ -1,6 +1,6 @@
 {
   "name": "moar-sugar",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Stuff to make development sweet!",
   "main": "index.js",
   "scripts": {
