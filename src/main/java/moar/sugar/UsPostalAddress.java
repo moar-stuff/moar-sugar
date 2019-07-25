@@ -67,16 +67,22 @@ public class UsPostalAddress {
       address.city = s.replaceAll(",", "").trim();
       return;
     }
-    s = s.replaceAll(",", "").substring(address.city.length()).trim();
+    s = s.replaceAll(",", "");
+    s = s.substring(address.city == null ? 0 : address.city.length());
+    s = s.trim();
     if (s.isEmpty()) {
       return;
     }
 
-    // Parse state
-    address.state = s.replaceAll("\\s.*", "");
-    s = s.substring(address.state.length()).trim();
-    if (s.isEmpty()) {
-      return;
+    s = s.replaceAll("\\s.*", "");
+
+    if (!s.matches("\\d*")) {
+      // Parse state
+      address.state = s;
+      s = s.substring(address.state == null ? 0 : address.state.length()).trim();
+      if (s.isEmpty()) {
+        return;
+      }
     }
 
     // Parse zip
